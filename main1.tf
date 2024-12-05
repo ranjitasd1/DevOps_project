@@ -7,7 +7,7 @@ resource "aws_instance" "instance-1" {
     ami = "ami-047126e50991d067b"
     instance_type = "t2.medium"
     security_groups = ["default"]
-    key_name = "project"
+    key_name = "open"
     user_data = file("docker.sh")
     tags = {
         Name = "Microk8s"
